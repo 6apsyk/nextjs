@@ -9,6 +9,7 @@ const Users = ({ users }) => {
       <ul>
         {users.map(user => (
           <li key={user.id}>
+            {/* динамическая марш-ия */}
             <Link href={`/users/${user.id}`}>
               <a>{user.name}</a>
             </Link>
